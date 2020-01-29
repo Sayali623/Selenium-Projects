@@ -1,0 +1,92 @@
+package loginpage;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class CreateUser{
+
+	WebDriver driver;
+
+	@Test(priority = 1)
+	public void Adminlogin() {
+
+		System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://admin.sproutlogix.com/");
+		driver.manage().window().maximize();
+
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("qa+dec@sproutlogix.com");
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("sayali@1");
+		driver.findElement(By.xpath("//div[@class='button-bar']")).click();
+
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+	@Test(priority = 2, enabled = true)
+	public void Menubar() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//span[contains(text(),'Org Management')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'Users')]")).click();
+		// driver.findElement(By.xpath("//a[@href='#/pages/users/user-invite']")).click();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void AddUser() throws Throwable {
+		// driver.navigate().to("https://admin.sproutlogix.com/#/pages/users/user-list");
+
+		driver.findElement(By.xpath("//a[@href='#/pages/users/user-invite']")).click();
+		driver.findElement(By.xpath("//input[@id='employeeId']")).sendKeys("001");
+		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("Rani Dec");
+		driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Sawant");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("rani.sawant+dec4@sproutlogix.com");
+		// driver.findElement(By.xpath("//select[@name='designation']")).click();
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		WebElement e = driver.findElement(By.xpath("//select[@name='designation']"));
+		Select sel = new Select(e);
+
+		sel.selectByIndex(4);
+
+		driver.findElement(By.xpath("//tag-input[@placeholder='Add Roles']")).click();
+
+		// Select Role
+		driver.findElement(By.xpath("//input[@aria-label='Add Roles']")).sendKeys("EMPLOYEE","SUPERADMIN");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@aria-label='Add Roles']")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.xpath("//input[@aria-label='Add Roles']")).sendKeys(Keys.ENTER);
+//
+//		// Select Teams
+//		driver.findElement(By.xpath("//input[@aria-label='Add Teams']")).sendKeys("UAT","My Reportees");
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//input[@aria-label='Add Teams']")).sendKeys(Keys.ARROW_DOWN);
+//		driver.findElement(By.xpath("//input[@aria-label='Add Teams']")).sendKeys(Keys.ENTER);
+//
+//		// select job function
+//		driver.findElement(By.xpath("(//option[@value='1'])[2]")).click();
+		
+		//Manager name
+		driver.findElement(By.xpath("//input[@aria-label='Manager Name']")).sendKeys("Mona Dec Shah","QA UAT December");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@aria-label='Manager Name']")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.xpath("//input[@aria-label='Manager Name']")).sendKeys(Keys.ENTER);
+
+		
+		driver.findElement(By.xpath("// button[@class='btn btn-success save-btn']")).click();
+	}
+
+	@Test(priority = 3, enabled = false)
+
+	public void Teams() {
+
+		driver.findElement(By.className("//div[@class='form-group col-sm-4 has-feedback team-input']")).click();
+	}
+
+}

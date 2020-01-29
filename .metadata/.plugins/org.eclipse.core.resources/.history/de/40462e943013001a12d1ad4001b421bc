@@ -1,0 +1,26 @@
+
+public class dayOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//System.out.println("Hello World");
+		
+		
+		Boolean x=true;
+		
+		if (x)
+		{
+			System.out.println("Hello world");
+		}
+	else if (10<60)
+	{
+		System.out.println("Sucess");
+		}
+	else 
+	{
+		System.out.println("hello");
+	}
+
+	
+}

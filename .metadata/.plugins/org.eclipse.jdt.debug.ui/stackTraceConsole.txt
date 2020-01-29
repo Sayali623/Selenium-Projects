@@ -1,0 +1,6 @@
+ <dependency>
+			<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.5</version>
+		</dependency>

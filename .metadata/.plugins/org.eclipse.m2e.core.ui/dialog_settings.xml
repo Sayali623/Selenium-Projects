@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="internal" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\DropDown,events,alert"/>
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\Asynchrony\src\synchrony\Implicit.java"/>
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\NewMavenProject\pom.xml"/>
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\NewMavenProject"/>
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\Sampledemotest"/>
+			<item value="C:\Users\Rani\eclipse-workspace\Dev\src\BasicJava\src\pack\Object.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="Asynchrony.practisallsenario"/>
+			<item value="Asynchrony"/>
+			<item value="Asynchrony.Asynchrony"/>
+			<item value="DropDown"/>
+			<item value="dropdown"/>
+			<item value="newparameters.annotationparameters"/>
+			<item value="newparameters.newparameters"/>
+			<item value="NewDeveloop.NewDeveloop"/>
+			<item value="NewMavenProject.NewMavenProject"/>
+			<item value="Sampledemotest.Sampledemotest"/>
+			<item value="Develoop"/>
+			<item value="Develoop.Develoop"/>
+		</list>
+		<list key="groupId">
+			<item value="Asynchrony "/>
+			<item value="DropDown"/>
+			<item value="newparameters"/>
+			<item value="NewDeveloop"/>
+			<item value="NewMavenProject"/>
+			<item value="Sampledemotest"/>
+			<item value="Develoop"/>
+		</list>
+		<list key="artifactId">
+			<item value="practisallsenario"/>
+			<item value="Asynchrony"/>
+			<item value="DropDownDay1"/>
+			<item value="annotationparameters"/>
+			<item value="newparameters"/>
+			<item value="NewDeveloop"/>
+			<item value="NewMavenProject"/>
+			<item value="Sampledemotest"/>
+			<item value="Develoop"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

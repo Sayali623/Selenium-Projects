@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WholeSuite]">
+  <parameter name="Lounch" value="mozila"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="mewpackage.ClassAA">
+        <methods>
+          <include name="Q"/>
+        </methods>
+      </class> <!-- mewpackage.ClassAA -->
+      <class name="mewpackage.Annotatinexample">
+        <methods>
+          <include name="gettitle1"/>
+          <include name="Beforeme"/>
+          <include name="gettitle"/>
+          <include name="gettitle2"/>
+        </methods>
+      </class> <!-- mewpackage.Annotatinexample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [WholeSuite] -->

@@ -1,0 +1,42 @@
+package calenderandTable;
+
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class FileUtils {
+	
+	public static void main(String args) {
+	System.setProperty("webdriver.chrome.driver","D:\\Driver\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driverOne.get("https://www.google.com");
+	TakeScreenShort("googleScreenShort" , driverOne);
+	
+
+}
+
+
+
+public static void TakeScreenShort(String fileName ,WebDriver driverOne) throws IOException {
+	
+	
+	TakesScreenshot scrShot =((TakesScreenshot)driverOne);
+	
+	File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+	
+	File DestFile=new File("/Users/chinmaydeshpande/eclipse-workspace/selvinsselenium/screenShort"+fileName+".jpg");	
+	
+	FileUtils.copyFile(SrcFile, DestFile);
+	
+	//FileUtils.copyFile(scrShot.getScreenshotAs(OutputType.FILE), new File("/Users/chinmaydeshpande/eclipse-workspace/selvinsselenium/screenShort"+fileName+".jpg"));
+
+	
+}
+}
+
+

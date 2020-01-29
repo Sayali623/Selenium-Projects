@@ -1,0 +1,69 @@
+package NewMavenProject.NewMavenProject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Facebook {
+
+	@Test
+	public void login() {
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rani\\Desktop\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("www.facebook.com");
+		driver.navigate().to("https://mail.rediff.com/cgi-bin/login.cgi");
+		
+//	WebElement e= driver.findElement(By.cssSelector("input[id='email']"));
+//	e.sendKeys("sayali");
+	 
+//		WebElement e= driver.findElement(By.xpath(//input[@ id='email']));
+////		e.sendKeys("sayali");
+//				
+		
+		//xpath
+		
+		// tagName[@Attribute = 'value']
+		
+		// Css Selector 
+		
+		
+		// tagName[Attribute = 'value']
+		
+		
+		
+		//#IdValue
+
+		
+		// .ClassValue
+		
+		
+		
+		//tagName#Idvalue
+		
+		//tagname.ClassVAule
+		
+		
+		// 
+		
+		driver.findElement(By.xpath("//input[@name = 'login']")).sendKeys("hello");
+		driver.findElement(By.cssSelector("#password")).sendKeys("gh");
+		driver.findElement(By.xpath("input[@value = 'Go']")).click();
+		driver.switchTo().alert().accept();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+				
+				
+}
+}
